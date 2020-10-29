@@ -1,5 +1,42 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Reducer
+reducer就是一个纯函数，接收旧的state和action，返回新的state
+
+保持reducer纯净非常重要，不能在reducer中做这些操作：
+
+修改传入参数
+
+执行有副作用的操作，如API请求和路由跳转
+
+调用非纯函数，如Date.now() 或 Math.random()
+
+# reduce 聚合函数
+
+# Redux javaScript应用的状态容器，保证程序行为一致且易于测试
+1、需要一个store来存储数据
+
+2、store里的reducer初始化state并定义state修改规则
+
+3、通过dispatch一个action 来提交对数据的修改
+
+4、action提交到reducer函数里，根据传入的action的type，返回新的state
+
+createStore创建store
+
+reducer初始化、修改状态函数
+
+getState获取状态值
+
+dispatch提交更新
+
+subscribe变更订阅
+
+
+# 异步
+Redux只是个纯粹的状态管理器，默认至支持同步，实现异步任务比如延迟，网络请求，需要中间件支持。比如：redux-thunk和redux-logger
+
+
 ## Available Scripts
 
 In the project directory, you can run:
