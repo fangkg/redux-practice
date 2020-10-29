@@ -13,7 +13,9 @@ reducer就是一个纯函数，接收旧的state和action，返回新的state
 
 # reduce 聚合函数
 
-# Redux javaScript应用的状态容器，保证程序行为一致且易于测试
+# Redux 
+javaScript应用的状态容器，保证程序行为一致且易于测试
+
 1、需要一个store来存储数据
 
 2、store里的reducer初始化state并定义state修改规则
